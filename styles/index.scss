@@ -1,1 +1,51 @@
-!
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    .navigation {
+        background: #000;
+
+        .menu {
+            background: #000;
+            height: 45px;
+            display: flex;
+            width: 50%;
+            //justify-content: space-around;
+            align-items: center;
+            list-style: none;
+
+            > li {
+                padding: 0 30px;
+                height: 100%;
+                line-height: 45px;
+
+                > a {
+                    color: #FFF;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                }
+
+                ul.more-sub-menu {
+                    display: none;
+                }
+
+                &:hover {
+                    cursor: pointer;
+                    background: #CCCCCC;
+
+                    > a {
+                        color: #000;
+                    }
+                }
+            }
+
+            &:last-child:hover {
+                &:last-child {
+                    background: red;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main .navigation {
+  background: #000;
+}
+.main .navigation .menu {
+  background: #000;
+  height: 45px;
+  display: flex;
+  width: 50%;
+  align-items: center;
+  list-style: none;
+}
+.main .navigation .menu > li {
+  padding: 0 30px;
+  height: 100%;
+  line-height: 45px;
+}
+.main .navigation .menu > li > a {
+  color: #FFF;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.main .navigation .menu > li ul.more-sub-menu {
+  display: none;
+}
+.main .navigation .menu > li:hover {
+  cursor: pointer;
+  background: #CCCCCC;
+}
+.main .navigation .menu > li:hover > a {
+  color: #000;
+}
+.main .navigation .menu:last-child:hover:last-child {
+  background: red;
+}
+
+/*# sourceMappingURL=index.css.map */
